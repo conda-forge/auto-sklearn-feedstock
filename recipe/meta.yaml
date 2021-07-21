@@ -1,5 +1,5 @@
 {% set name = "auto-sklearn" %}
-{% set version = "0.12.6" %}
+{% set version = "0.12.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bdd0c6885f7d575169a2dad01efe6fef8d73f627b9b288c86c8134a2c48ee71d
+  sha256: 60d7ff9d31d5eca8a87981b76d24df2ff93d65b326489bbb653f146a8b371626
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - python >=3.6
     - pyyaml
     - scikit-learn >=0.24.0,<0.25.0
-    - scipy >=0.14.1
+    - scipy >=0.14.1,<1.7
     - setuptools
     - smac >=0.13.1,<0.14
     - __linux
