@@ -11,7 +11,7 @@ source:
   sha256: c574720c787efba36c6a734f10af747c73aa369a0a0046e37d5bcdd8c7ef94d6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
   run:
     - configspace >=0.4.14,<0.5
-    - dask-core <2021.07
+    - dask <2021.07
     - distributed >=2.2.0,<2021.07
     - joblib
     - liac-arff
