@@ -1,5 +1,5 @@
 {% set name = "auto-sklearn" %}
-{% set version = "0.14.2" %}
+{% set version = "0.14.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cd26d0c7be4f7392d49ec343683111a4d0572c860cb48d98a8e17797bb714081
+  sha256: b918d961c0f012184baf89ef8486d8530a9eb4754c6a2eacead808f9917d439b
 
 build:
   number: 0
@@ -21,8 +21,8 @@ requirements:
     - python >=3.7
   run:
     - configspace >=0.4.14,<0.5
-    - dask <2021.07
-    - distributed >=2.2.0,<2021.07
+    - dask >=2021.12
+    - distributed >=2012.12
     - joblib
     - liac-arff
     - numpy >=1.9.0
