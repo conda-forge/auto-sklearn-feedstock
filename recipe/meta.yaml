@@ -1,5 +1,5 @@
 {% set name = "auto-sklearn" %}
-{% set version = "0.14.3" %}
+{% set version = "0.14.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b918d961c0f012184baf89ef8486d8530a9eb4754c6a2eacead808f9917d439b
+  sha256: 5fa46a26b7f39822607f2366df05653b2af2d8c609c7e6136cc307b2a3ed3248
 
 build:
   number: 0
