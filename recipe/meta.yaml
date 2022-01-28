@@ -7,8 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5fa46a26b7f39822607f2366df05653b2af2d8c609c7e6136cc307b2a3ed3248
+  - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    sha256: 5fa46a26b7f39822607f2366df05653b2af2d8c609c7e6136cc307b2a3ed3248
+  - url: https://raw.githubusercontent.com/automl/automl_common/main/LICENSE
+    sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+    # automl_common license
 
 build:
   number: 0
@@ -53,9 +56,10 @@ about:
   summary: Automated machine learning.
   description: |
     auto-sklearn is an automated machine learning toolkit and a drop-in replacement for a scikit-learn estimator.
-  license: BSD-3-Clause
-  license_family: BSD
-  license_file: LICENSE.txt
+  license: BSD-3-Clause AND Apache-2.0
+  license_file:
+    - LICENSE.txt
+    - LICENSE
   doc_url: https://automl.github.io/auto-sklearn/master/manual.html
   dev_url: https://github.com/automl/auto-sklearn
 
