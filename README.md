@@ -3,7 +3,7 @@ About auto-sklearn
 
 Home: https://automl.github.io/auto-sklearn
 
-Package license: BSD-3-Clause
+Package license: BSD-3-Clause AND Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/auto-sklearn-feedstock/blob/master/LICENSE.txt)
 
