@@ -1,5 +1,5 @@
 {% set name = "auto-sklearn" %}
-{% set version = "0.14.6" %}
+{% set version = "0.15.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: 8e26b2059bb3234ea6ef9c08a8d9b6174373450097e6f3f4961e23c660d33df4
+    sha256: 082941a56acfc93a83e221e08ef5d5b2083b1ff58d18be7c27d003a11e4a41d0
   - url: https://raw.githubusercontent.com/automl/automl_common/main/LICENSE
     sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     # automl_common license
